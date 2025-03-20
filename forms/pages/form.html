@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<body>
+    <header>
+        <h1>Hola soy el form</h1>
+        <span>Click para ir al <a href="../index.html">inicio</a>.</span>
+    </header>
+    <main>
+        <form action="/enviar" method="POST">
+            <h2>Formulario de contacto</h2>
+            <section>
+                <h4>Tus datos personales</h4>
+                <fieldset>
+                    <legend>Datos</legend>
+                    <div style="margin-bottom: 20px;">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Ej: Juan" autocomplete="name"/>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email"/>
+                    </div>
+                    <div>
+                        <label for="phone">Telefono:</label>
+                        <input type="number" id="phone"/>
+                    </div>  
+                </fieldset>
+                <fieldset>
+                    <legend>Cositas</legend>
+                    <div>
+                        <input type="range" name="" id=""/>
+                    </div>  
+                    <div>
+                        <label for="file">Selecciona un archivo</label>
+                        <input type="file" name="file" id="file"/>
+                    </div>  
+                    <div>
+                        <label for="genero">Genero</label>
+                        <!-- a demas del select se puede usar etiqueta datalist -->
+                        <select name="genero" id="genero">
+                            <option value="">Seleccione un genero: </option>
+                            <option value="femenino">Femenino </option>
+                            <option value="maculino">Masculino</option>
+                            <option value="otro">Otro </option>
+    
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Intereses:</label>
+                        <ul>
+                            <li>
+                                <label for="deporte">Deporte</label>
+                                <input type="checkbox">
+                            </li>
+                            <li>
+                                <label for="musica">Musica</label> 
+                                <input type="checkbox">
+                            </li>
+                            <li>
+                                <label for="cine">Cine</label> 
+                                <input type="checkbox">
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                    <div>
+                        <!-- mismo name es para q solo se pueda elegir 1 opc-->
+                        <input type="radio" id="opcion1" name="eleccion">
+                        <label for="opcion1">Opcion 1</label>
+                        <br>
+                        <input type="radio" id="opcion2" name="eleccion">
+                        <label for="opcion2">Opcion 2</label>
+                        <br>
+                        <input type="radio" id="opcion3" name="eleccion">
+                        <label for="opcion3">Opcion 3</label>
+                    </div>
+                    <div>
+                        <h5>Dejanos un comentario</h5>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" name="submit" id="submit">
+                <input type="hidden" name="hidden" id="hidden">
+                <input type="reset" name="reset" id="reset">
+                <input type="search" name="search" id="search">
+                <input type="password" name="password" id="password">
+                <input type="datetime" name="datetime" id="datetime">
+                <input type="date" name="date" id="date">
+                <input type="time" name="time" id="time">
+            </section>
+        </form>
+
+    </main>
+    
+    
+    <footer>
+        <h6>&copy; Todos los derechos reservados</h6>
+        <section>
+            <ul>
+                <h5>Redes sociales:</h5>
+                <li><a href="#ig">Instagram</a></li>
+                <li><a href="#fb">Facebook</a></li>
+                <li><a href="#tw">Twitter</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
