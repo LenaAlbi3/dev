@@ -1,0 +1,155 @@
+a{
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ddd013;
+    font-size: 24px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/*a:hover{
+    color: aquamarine;
+    text-decoration: underline;
+    /* usar mucho el transform
+    transform: translateY(-4px); 
+}*/
+
+input{
+    padding: 4px;
+    /*all: unset; sirve para eliminar todos los estilos*/
+}
+
+input:focus{
+    font-weight: bold;
+    outline: none;
+    border: 2px solid #bd39a0;
+}
+
+/*ul{
+    margin: 20px;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+/*
+para seleccionar cualq elemento dentro de una lista
+li:nth-child(){
+
+}*/
+
+li:first-child{
+    /*Sirve para seleccionar el primer elemento de una lista*/
+    font-weight: bold;
+    color: aqua;
+}
+
+li:nth-child(3){
+    /*para seleccionar pares se puede poner (even) o (2n) 
+    y para impares (odd) p (2n+1), para todo poner (n)*/
+    color: #bd39a0;
+
+}
+
+li:last-child{
+    /*para ultimo elemento*/
+    color: brown;
+}
+
+li:nth-child(even){
+    background-color: tan;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 20px;
+}
+
+/*p::before{
+    content: "👉";
+}*/
+
+p::first-letter{
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*a::after{
+    content: "🔗";
+}*/
+
+/*button{
+    all: unset;
+    padding: 8px 4px;
+    border-radius: 4px;
+    border: 1px solid #666;
+    box-shadow: 1px 2px 4px #000;
+    background-color: #565656;
+    cursor: pointer;
+}
+
+button::after{
+    content: attr(data-tooltip);
+    /*en caso de querer sacar algo de la pantalla display: none;*/
+   /* background-color: #000;
+    padding: 2px 6px;
+    position: absolute;
+    transform: translateY(-140%);
+    border-radius: 5px 5px 5px 0px;
+    display: none;
+}
+
+button:hover{
+    background-color: #4c4c4c;
+    
+}
+
+button:hover::after{
+    display: inline-block;
+}*/
+
+.lista-numerada li{
+    counter-increment: tarea;
+    position: relative;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.lista-numerada li::before{
+    content: counter(tarea) ". ";
+    position: absolute;
+    left: 0;
+
+}
+
+.subrayado{
+    position: relative;
+
+}
+
+.subrayado::before{
+    height: 2px;
+    width: 100%;
+    background-color: #4cdf50;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.3s ease;
+}
+
+.subrayado:hover::before{
+    transform: scaleX(1);
+}
+
+.derecha:hover::after{
+    content: attr(data-arrow-right);
+}
+
+.izquierda:hover::before{
+    content: attr(data-arrow-right);
+}
