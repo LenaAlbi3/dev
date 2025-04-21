@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+@keyframes moveX {
+    0%{
+        transform: translateX(0);
+
+    }
+    100%{
+        transform: translateX(200px);
+    }
+}
+
+
+/*@keyframes scale {
+    1%{
+        transform: scale(0.9), translateX(0);
+
+    }
+    100%{
+        transform: scale(1.1), translateX(200px);
+    }
+}*/
+
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(94, 17, 17);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: inline-block;
+    /*animation-name: moveX, scale;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+
+    animation: moveX 1s alternate infinite, fade-in 2s alternate infinite;
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
