@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prod.css">
+    <title>Document</title>
+</head>
+<body class="dark-mode">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">contacto</a></li>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="productos.html">comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="btn-container" id="modo">cambiar modo</button>
+        <h2>LISTADO DE PRODUCTOS</h2>
+        <section>
+            <h3>Manzana</h3>
+            <span>$10</span>
+            <div class="img-container">
+                <img src="https://fruteriadevalencia.com/wp-content/uploads/2015/02/RED-DELICIOUS-buena.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+
+            </p>
+            <div class="btn-container">
+               <button>COMPRAR</button> 
+            </div>
+            
+        </section>
+    </main>
+    <script>
+        let buttonEl = document.getElementById("modo");
+        buttonEl.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+        })
+
+    </script>
+</body>
+</html>

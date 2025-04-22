@@ -1,0 +1,87 @@
+:root{
+    --p-color: rgb(224, 203, 186);
+    --s-color: rgb(143, 123, 107);
+    --t-color: #dddada;
+}
+
+.dark-mode{
+    --p-color: rgb(117, 57, 16);
+    --s-color: #dddada;
+    --t-color: rgb(48, 42, 38);
+}
+
+body{
+    margin: 0;
+    background-color: var(--t-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100dvw;
+    height: 100dvh;
+    
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img-container img{
+    object-fit: contain;
+    width: 100%;
+}
+
+section{
+    position: relative;
+    width: 400px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: var(--p-color);
+}
+
+p{
+    font-size: 15px;
+    padding: 1px 5px;
+    width: 95%;
+}
+
+h3{
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 0px 8px 0px 8px;
+    background-color: var(--s-color);
+}
+
+button{
+    all: unset;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.btn-container{
+    margin: 15px;
+    justify-self: center;
+    padding: 7px;
+    width: fit-content;
+    border: 1px solid #333;
+    background-color: var(--s-color);
+    border-radius: 4px;
+    box-shadow: #333 2px 2px 0px 0px;
+}
+
+
+
