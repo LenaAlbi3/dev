@@ -1,0 +1,9 @@
+.dark-mode{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+textarea{
+    display: block;
+    margin-top: 1rem;
+}
